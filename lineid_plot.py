@@ -412,12 +412,12 @@ def plot_line_ids(wave, flux, line_wave, line_label1, label1_size=None,
                             box_loc[i][1]),
 
                     fontsize=label1_size[i],
-                    label=label_u[i],
+                    # label=label_u[i],
                     **ak)
         if extend[i]:
             ax.plot([line_wave[i]] * 2, [arrow_tip[i], line_flux[i]],
                     scalex=False, scaley=False,
-                    label=label_u[i] + "_line",
+                    # label=label_u[i] + "_line",
                     **pk)
 
     # Draw the figure so that get_window_extent() below works.
